@@ -2,17 +2,17 @@
 
 - type: github
   icon: "fab fa-github"
-
-- type: twitter
-  icon: "fab fa-twitter"
+  url: 'https://github.com/kumaraditya1999'
 
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
+  url: 'mailto:kumaraditya1999@gmail.com'
 
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
+- type: linkedin
+  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+  url:  'https://www.linkedin.com/in/aditya-kumar-8218ab138'                  # Fill with your Linkedin homepage
+
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
