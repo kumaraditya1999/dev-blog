@@ -7,6 +7,8 @@ math: true
 mermaid: true
 ---
 
+<script>{% include_relative assets/scripts/ga-pv.js %}</script>
+
 Taking one step further into the 2D Game Development journey I will summarize what I learnt while creating a custom snow boarding game:
 
 ## Cinemachine

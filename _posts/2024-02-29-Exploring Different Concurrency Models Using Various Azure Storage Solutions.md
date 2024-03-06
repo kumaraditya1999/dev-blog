@@ -7,6 +7,8 @@ math: true
 mermaid: true
 ---
 
+<script>{% include_relative assets/scripts/ga-pv.js %}</script>
+
 ## Generating Serial Numbers
 
 Generating Serial Numbers is not something that is very unique, almost any service you build you can run into the issue of generating a serial number. Lets take a specific problem:

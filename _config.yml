@@ -50,6 +50,9 @@ google_site_verification: # fill in to your verification string
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
+backend:
+  url: https://dev-blog-backend-webapp.azurewebsites.net
+
 google_analytics:
   id: 'G-N8EKHWTPCT' # fill in your Google Analytics ID
 
