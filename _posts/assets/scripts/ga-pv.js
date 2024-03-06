@@ -13,6 +13,8 @@ fetch(url)
         var selectedElement = document.querySelector('.readtime');
         var newElement = document.createElement('span');
         newElement.innerHTML = '<em><i class="fas fa-eye small"></i> ' + '  ' + data.page_views + '</em> views';
+        var originalClass = selectedElement.className;
+        newElement.className = originalClass;
         selectedElement.parentNode.insertBefore(newElement, selectedElement);
     })
     .catch(error => {
