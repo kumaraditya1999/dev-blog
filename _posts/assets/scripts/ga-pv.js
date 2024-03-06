@@ -1,4 +1,4 @@
-
+console.log('Hello from ga-pv.js!');
 
 var currentURL = window.location.pathname;
 var url = "{{ site.backend.url }}" + "/get_page_views" + currentURL;
