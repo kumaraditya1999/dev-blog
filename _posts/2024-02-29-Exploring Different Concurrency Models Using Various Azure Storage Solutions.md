@@ -9,15 +9,18 @@ mermaid: true
 
 <script>{% include_relative assets/scripts/ga-pv.js %}</script>
 
-Lets explore the different concurrency models using azure storages.
+We are in the era of `cloud` boom (transitioning to AI boom but okay), where storage solutions are seamlessly offered as services through prominent cloud providers like `Azure`, `GCP`, and `AWS`. The accessibility provided by these platforms has transformed database usage into a straightforward endeavor. With infrastructure maintenance going out the window, understanding the tradeoffs and the behaviour of databases plays a key role while developing any distributed solution. 
+
+This post aims to guide you in designing a system that allows for the analysis of databases based on their concurrency handling capabilities. Recognizing that there's no universal key for all locks, comprehending the associated trade-offs is crucial. We'll delve into a specific use case, examining some of the most popular databases and their suitability within the given problem space.
 
 ## Generating Serial Numbers
 
-Generating Serial Numbers is not something that is very unique, almost any service you build you can run into the issue of generating a serial number. Lets take a specific problem:
+Let's establish the problem at hand. We aim to construct a serial number generator capped at $$N$$, resetting daily and starting the numbering afresh from $$0$$ to $$N$$. In simpler terms, the serial number service we're developing should adhere to the following constraints:
 
 ```yaml
-1. Generate Serial Number between 0 to N, i.e it should start from 0 and stop at N
-2. The Serial Number Generated should reset the counter after the day changes.
+1. On demand, the serial number service should return a unique serial number, no repetation.
+2. The serial numbers should start from 0 and cease at N.
+3. The serial numbers are unique within a day, but not accross days. If the day changes, the service should start generating the serial number from 0.
 ```
 
 ## The Naive Approach
