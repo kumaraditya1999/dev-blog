@@ -5,11 +5,12 @@ categories: [Game Development, 2D]
 tags: [unity, 2d]
 math: true
 mermaid: true
+img_path: /assets/images/unity-2d-2
 ---
 
 <script>{% include_relative assets/scripts/ga-pv.js %}</script>
 
-Taking one step further into the 2D Game Development journey I will summarize what I learnt while creating a custom snow boarding game:
+Taking one step further into the 2D Game Development journey I will summarize what I learnt while creating a custom snow boarding game. Scroll till the end to see the results.
 
 ## Cinemachine
 
@@ -89,7 +90,7 @@ Particle System are cool and cannot be summarized in one paragraph. Play around 
 > Use Gizmos to control what you see in the scene and game scene
 {: .prompt-tip }
 
-## Using the FindObjectType
+## Using The FindObjectType
 
 Unity provides the ```FindObjectType()``` method in case you can access a method using its type. If its one of a kind you can get it, else unity will get the first one. Usally comes in handy when you have custom script classes which are used at only one places or singletons. Use it to call public methods on other classes, example
 
@@ -114,3 +115,36 @@ Attach an AudioClip ```AudioClip``` in the  ```AudioSource``` component and enjo
     GetComponent<AudioSource>().PlayOneShot(audioClip);
 ```
 
+## Putting Them All Together:
+
+Now that you have learned the above concepts, here is how you can attempt to make a small snowboarding game (assuming you have the sprites):
+
+1. **Create a 2D Unity Game Project:**
+   - Start by creating a new 2D Unity game project.
+
+2. **Design the Mountain:**
+   - Use a sprite shape to create the mountain terrain. Open the shape and design the terrain as you like.
+   - Add an edge collider on the terrain for collision detection.
+
+3. **Import Sprites:**
+   - Import the necessary sprites for trees, player, clouds, rocks, etc.
+   - Create the game environment by arranging and placing these sprites.
+
+4. **Create the Player Object:**
+   - Develop the player object with its associated sprites.
+   - Attach a rigid body and colliders to the player for handling physics interactions.
+
+5. **Terrain Features:**
+   - Add a surface effector to the terrain for the movement.
+
+6. **Player Controller:**
+   - Implement player controller scripts to control the speed of the player and to handle mid-air rotations.
+
+7. **Collision Detection:**
+   - Add scripts for collision detection to manage crashes, finishing, and reloading the level upon completion.
+
+8. **Enjoy Your Game:**
+   - Once all these components are integrated, you will have a functional snowboarding game.
+   - Fine-tune the game elements to achieve the desired gameplay experience.
+
+![Snowboarding Game](snowboard.gif)
