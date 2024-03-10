@@ -30,7 +30,7 @@ This blog is my digital playground, where I share my insights, experiences, and 
 - 🎮 Fun projects, coding challenges, and open-source contributions.
 - 📚 A little sprinkle of my personal journey and reflections on life as a developer.
 
-I'm a firm believer in the power of knowledge sharing and learning together, so don't hesitate to reach out, comment, or connect with me on [Linkedin](https://www.linkedin.com/in/kumaraditya1999/), [Twitter](AdityaK81618188) and [GitHub](https://github.com/kumaraditya1999). Let's embark on this coding adventure together!
+I'm a firm believer in the power of knowledge sharing and learning together, so don't hesitate to reach out, comment, or connect with me on [Linkedin](https://www.linkedin.com/in/kumaraditya1999/), [Twitter](https://twitter.com/AdityaK81618188) and [GitHub](https://github.com/kumaraditya1999). Let's embark on this coding adventure together!
 
 ```mermaid
 graph TB
