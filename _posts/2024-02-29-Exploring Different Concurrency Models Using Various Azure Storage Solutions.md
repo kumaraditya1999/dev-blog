@@ -5,6 +5,7 @@ categories: [Software Development, Distributed System]
 tags: [sql, azure, cosmosdb, distributed-system]
 math: true
 mermaid: true
+pin: true
 ---
 
 <script>{% include_relative assets/scripts/ga-pv.js %}</script>

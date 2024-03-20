@@ -1,7 +1,7 @@
 ---
 title: Adding Page Views In My Jekyll Blog
 date: 2024-03-07 10:10:10 +0530
-categories: [Software Development, 2D]
+categories: [Software Development]
 tags: [blog, jekyll, pageviews]
 math: true
 mermaid: true
