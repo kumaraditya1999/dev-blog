@@ -9,6 +9,7 @@ img_path: /assets/images/unity-2d-2
 ---
 
 <script>{% include_relative assets/scripts/ga-pv.js %}</script>
+<script>{% include_relative assets/scripts/newsletter.js %}</script>
 
 Taking one step further into the 2D Game Development journey I will summarize what I learnt while creating a custom snow boarding game. Scroll till the end to see the results.
 

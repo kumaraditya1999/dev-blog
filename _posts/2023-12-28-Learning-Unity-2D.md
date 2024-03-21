@@ -9,6 +9,7 @@ img_path: /assets/images/unity-2d-1
 ---
 
 <script>{% include_relative assets/scripts/ga-pv.js %}</script>
+<script>{% include_relative assets/scripts/newsletter.js %}</script>
 
 Embarking on my 2D Game Development journey in Unity, here's a summary for my future self of what I've learned. Scroll to the end to see the results.
 

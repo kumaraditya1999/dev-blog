@@ -9,6 +9,7 @@ script: 'assets/scripts/ga-pv.js'
 ---
 
 <script>{% include_relative assets/scripts/ga-pv.js %}</script>
+<script>{% include_relative assets/scripts/newsletter.js %}</script>
 
 ## Introduction
 
