@@ -14,7 +14,7 @@ img_path: /assets/images/page-view/
 This post is continuation of the previous [post](https://kumaraditya1999.github.io/dev-blog/posts/C++-STL-Library-Counterparts-In-Python/){:target="_blank"}. Most of the things like basic `data structures` and `algorithms` like `searching` and `sorting` were covered, the only thing that remains is the `graph algorithms`. Graph algorithms are very standard and are must for any competitive programmer so we will explore them in this post. After reading these two post you should be equipped with enough implementation knowledge to solve the first few easy problems in contests.
 
 ## Before You Read
-There are two main ways to represent graph, first `Adjacency Martix` where $$adj[u][v]$$ is $$True$$ if there is an edge from $$u$$ to $$v$$. Second, `Adjacency List` where $$adj[u]$$ contains the list of all the nodes adjacent to the node $$u$$. If Graph is sparse then its prefered to store it as an `Adjacency List` rather than a `Matrix` since it consumes less space ($$O(E)$$ vs $$O(N^2)$$) and also iterating over adjacent elements is only smaller ($$O(deg)$$ vs $$O(N)$$).
+There are two main ways to represent graph, first `Adjacency Martix` where $$adj[u][v]$$ is $$True$$ if there is an edge from $$u$$ to $$v$$. Second, `Adjacency List` where $$adj[u]$$ contains the list of all the nodes adjacent to the node $$u$$. If the graph is sparse, it is preferred to store it as an 'Adjacency List' rather than a 'Matrix' due to its lower space consumption ($$O(E)$$ vs $$O(N^2)$$) and also iterating over adjacent elements is more efficient ($$O(deg)$$ vs $$O(N)$$).
 
 A very useful tool to visualize graphs can be found [here](https://csacademy.com/app/graph_editor/){:target="_blank"}, its a life saver!
 
