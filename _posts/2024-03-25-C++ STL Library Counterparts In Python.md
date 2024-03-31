@@ -1,7 +1,7 @@
 ---
 title: C++ STL Library Counterparts In Python
 date: 2024-03-25 10:10:10 +0530
-categories: [Computer Science, Data Structures]
+categories: [Python]
 tags: [python, c++, ds, stl]
 math: true
 mermaid: true
@@ -234,6 +234,27 @@ dp.popleft() # pops an element from the left of the deque
 
 > Python's deque datastructure can be used to implement the `stack`, `queue` and `deque` stl classes present in c++. Deques are better if you want to implement Queue and Stack operations.
 {: .prompt-tip }
+
+## Counters
+
+This is a special mention. Alot of times there are case when you want to calculate the frequency of elements in an array. 
+
+Implementation in c++ without sorting and searching:
+```c++
+vector<int> nums = {1, 2, 3, 4, 1, 2, 1, 3, 3, 4, 5};
+unordered_map<int, int> freq;
+
+for (int num: nums) freq[num]++
+```
+
+To implement it in python:
+```python
+from collections import Counters
+
+nums = [1, 2, 3, 4, 1, 2, 1, 3, 3, 4, 5]
+freq = Counter(nums) # contruct the frequency map of elements
+print(freq[1]) # it will return the frequncy of 1
+```
 
 ## The End
 
