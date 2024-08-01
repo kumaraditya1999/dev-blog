@@ -8,9 +8,6 @@ mermaid: true
 img_path: /assets/images/page-view/
 ---
 
-<script>{% include_relative assets/scripts/ga-pv.js %}</script>
-<script>{% include_relative assets/scripts/newsletter.js %}</script>
-
 Recently I came across some tutorials that taught me how to create a blog free of cost using Ruby, Jekyll and Github Pages. Took me less than half an hour to set it up, I chose a good theme ([Chirpy](https://chirpy.cotes.page/posts/getting-started/){:target="_blank"}) which consumed most of my time; and I thought I am good to go now. But then I came across a post by [Neo Wang](https://nwatx.me/post/atcoderdp){:target="_blank"} and saw something really interesting, the page view counter. 
 
 ![Page View Counter](page-view.png)

@@ -7,9 +7,6 @@ math: true
 mermaid: true
 ---
 
-<script>{% include_relative assets/scripts/ga-pv.js %}</script>
-<script>{% include_relative assets/scripts/newsletter.js %}</script>
-
 We are in the era of `cloud` boom (transitioning to AI boom but okay), where storage solutions are seamlessly offered as services through prominent cloud providers like `Azure`, `GCP`, and `AWS`. The accessibility provided by these platforms has transformed database usage into a straightforward endeavor. With infrastructure maintenance going out the window, understanding the tradeoffs and the behaviour of databases plays a key role while developing any distributed solution. 
 
 This post aims to guide you in designing a system that allows for the analysis of databases based on their concurrency handling capabilities. Recognizing that there's no universal key for all locks, comprehending the associated trade-offs is crucial. We'll delve into a specific use case, examining some of the most popular databases and their suitability within the given problem space.

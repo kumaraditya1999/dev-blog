@@ -8,9 +8,6 @@ mermaid: true
 img_path: /assets/images/page-view/
 ---
 
-<script>{% include_relative assets/scripts/ga-pv.js %}</script>
-<script>{% include_relative assets/scripts/newsletter.js %}</script>
-
 This post is continuation of the previous [post](https://kumaraditya1999.github.io/dev-blog/posts/C++-STL-Library-Counterparts-In-Python/){:target="_blank"}. Most of the things like basic `data structures` and `algorithms` like `searching` and `sorting` were covered, the only thing that remains is the `graph algorithms`. Graph algorithms are very standard and are must for any competitive programmer so we will explore them in this post. After reading these two post you should be equipped with enough implementation knowledge to solve the first few easy problems in contests.
 
 ## Before You Read

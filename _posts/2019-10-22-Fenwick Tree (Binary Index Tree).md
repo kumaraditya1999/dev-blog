@@ -8,9 +8,6 @@ mermaid: true
 script: 'assets/scripts/ga-pv.js'
 ---
 
-<script>{% include_relative assets/scripts/ga-pv.js %}</script>
-<script>{% include_relative assets/scripts/newsletter.js %}</script>
-
 ## Introduction
 
 Fenwick Trees, also known as Binary Indexed Trees (BITree), are essential data structures extensively used for efficiently solving range query problems. What sets Fenwick Trees apart is their ability to compute the values of a given function $f$ over a specific range $[1:r]$, where $r$ represents the right endpoint. The formula for this function is:

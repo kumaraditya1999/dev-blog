@@ -8,9 +8,6 @@ mermaid: true
 img_path: /assets/images/page-view/
 ---
 
-<script>{% include_relative assets/scripts/ga-pv.js %}</script>
-<script>{% include_relative assets/scripts/newsletter.js %}</script>
-
 `c++` is choice of majority of competitive programmers, and `python` is not that friendly. One significant reason for this preference is Python's slower code execution compared to C++. Python has an advantage, it has very very low learning curve, in case someone wants to learn the algorithm and not the language they can try python. However, it not advisable to run away from scary implementations since it's a part of programming but for starters lets overlook those complexities. It's not impossible to do competitive programming in python, there are people like [pagenegod](https://codeforces.com/profile/pajenegod) who have received grand master title in codeforces.
 
 So this is my attempt to demystify python data structures in order to start competitive programming, as a `c++` users I have tried to compare and contrast how to use the Python counterparts; if you already know the c++ counter parts. 

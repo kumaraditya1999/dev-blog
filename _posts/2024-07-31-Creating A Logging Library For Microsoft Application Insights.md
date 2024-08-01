@@ -7,8 +7,6 @@ math: true
 mermaid: true
 ---
 
-<script>{% include_relative assets/scripts/ga-pv.js %}</script>
-
 ### Before You Read
 
 This article mostly revolves around the `.NET` ecosystem, so familiarity with the following terms will be helpful:
