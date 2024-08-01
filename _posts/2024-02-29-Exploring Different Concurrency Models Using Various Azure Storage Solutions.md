@@ -1,11 +1,10 @@
 ---
 title: Exploring Different Concurrency Models Using Various Azure Storage Solutions
 date: 2024-03-05 10:10:10 +0530
-categories: [Software Development, Distributed System]
+categories: [Software Engineering, Distributed System]
 tags: [sql, azure, cosmosdb, distributed-system]
 math: true
 mermaid: true
-pin: true
 ---
 
 <script>{% include_relative assets/scripts/ga-pv.js %}</script>
