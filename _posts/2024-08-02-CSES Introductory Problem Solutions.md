@@ -178,7 +178,7 @@ In this problem, instead of find the total number of possible combinations it wo
 - All the possible combinations are $$O(N * (N - 1) / 2)$$ where $$N$$ is the total number of squares which would be $$K^2$$.
 - Number of ways they attack each other would be, number of ways to place a $$2 * 3$$ sized rectangle. Work out this math yourself !
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240213124933/Chessboard_2.webp" />
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240213124933/Chessboard_2.webp" alt="image showing kinght attack make a 2 x 3 rectangle"/>
 
 ```c++
     long long n;
