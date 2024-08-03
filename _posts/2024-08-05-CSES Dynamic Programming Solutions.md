@@ -1,6 +1,6 @@
 ---
-title: CSES Introductory Problem Solutions
-date: 2024-08-02 10:10:10 +0530
+title: CSES Dynamic Programming Solutions
+date: 2024-08-05 10:10:10 +0530
 categories: [DSA Tutorials, CSES]
 tags: [logging, telemetry, nuget]
 math: true
@@ -40,39 +40,40 @@ Just do what is told, using a while loop would be the easiest but it can be impl
 
 ```
 
-## 2. [Missing Number](https://cses.fi/problemset/task/1083){:target="_blank"}
+## 2. [Minimizing Coins](https://cses.fi/problemset/task/1634){:target="_blank"}
 
-**Time Complexity:** $$O(N)$$
+**Time Complexity:** $$O(N * x)$$
 
-There are multiple ways to do it, two of them are listed below:
+Let $$dp[i]$$ store the minimum number of coins required to create the sum $$i$$.
+So, if we are taking a coin of value $$c$$ then we can get the relation as
 
-1. Subtract the sum of inputs from $$O(N * (N + 1) / 2)$$ (sum of first $$N$$ natural numbers)
+$$dp[i + c] = min(1 + dp[i], dp[i + c])$$
 
-```c++
-    long long n;
-    cin >> n;
-    long long sum = n * (n + 1) / 2;
-    for (int i = 0; i < n - 1; i++) {
-        int temp;
-        cin >> temp;
-        sum -= temp;
-    }
-    cout << sum << "\n";
-```
-2. Use the XOR property. $$a$$^$$a = 0$$. So **XOR** for all the inputs with **XOR** of all the number from $$1$$ to $$N$$, the ending result will contain only the missing number;
+And since the coins can be added multiple time, run the loop for $$i$$ from $$0$$ to $$x$$ for each coin $$c$$.
 
 ```c++
+    int n, x, c;
+    cin >> n >> x;
 
-    long long n;
-    cin >> n;
-    long long allXor = n, inputXor = 0;
-    for (int i = 1; i <= n - 1; i++) {
-        int temp;
-        cin >> temp;
-        inputXor ^= temp;
-        allXor ^= i;
+    vector<int> dp(x + 1, inf);
+
+    dp[0] = 0; // base case
+
+    for (int i = 0; i < n; i++) {
+        cin >> c;
+
+        // take the coin as many times as possible
+        for (int j = 0; j + c <= x; j++) {
+            dp[j + c] = min(dp[j + c], 1 + dp[j]);
+        }
     }
-    cout << (allXor ^ inputXor) << "\n";
+
+    if (dp[x] == inf) {
+        cout << -1 << "\n";
+    } else {
+        cout << dp[x] << "\n";
+    }
+    
 ```
 
 
