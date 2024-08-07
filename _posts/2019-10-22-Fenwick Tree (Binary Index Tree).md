@@ -5,7 +5,6 @@ categories: [Computer Science, Data Structures]
 tags: [fenwick-tree, binary-indexed-tree, algorithms]
 math: true
 mermaid: true
-script: 'assets/scripts/ga-pv.js'
 ---
 
 ## Introduction
